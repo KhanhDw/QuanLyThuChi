@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22091A97-C633-4269-8AF4-142BA5962F76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyThuChi</RootNamespace>
+    <AssemblyName>QuanLyThuChi</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangKy.Designer.cs">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BaoCao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Lich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Lich.Designer.cs">
+      <DependentUpon>Lich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\NhapThuChi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\NhapThuChi.Designer.cs">
+      <DependentUpon>NhapThuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemList\ItemFlowLayout_Lich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemList\ItemFlowLayout_Lich.Designer.cs">
+      <DependentUpon>ItemFlowLayout_Lich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemList\itemListNhapThuChi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemList\itemListNhapThuChi.Designer.cs">
+      <DependentUpon>itemListNhapThuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemList\ItemListThuChi_BaoCao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemList\ItemListThuChi_BaoCao.Designer.cs">
+      <DependentUpon>ItemListThuChi_BaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemList\itemListtimkiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemList\itemListtimkiem.Designer.cs">
+      <DependentUpon>itemListtimkiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemList\ItemPictureBox_ThemDanhMuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemList\ItemPictureBox_ThemDanhMuc.Designer.cs">
+      <DependentUpon>ItemPictureBox_ThemDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemList\PhanCachNgay_Lich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemList\PhanCachNgay_Lich.Designer.cs">
+      <DependentUpon>PhanCachNgay_Lich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\TaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ThemDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ThemDanhMuc.Designer.cs">
+      <DependentUpon>ThemDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\timkiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\timkiem.Designer.cs">
+      <DependentUpon>timkiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\ReportChiTieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\ReportChiTieu.Designer.cs">
+      <DependentUpon>ReportChiTieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TruyenData.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangKy.resx">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\BaoCao.resx">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Lich.resx">
+      <DependentUpon>Lich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\NhapThuChi.resx">
+      <DependentUpon>NhapThuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ThemDanhMuc.resx">
+      <DependentUpon>ThemDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemList\ItemFlowLayout_Lich.resx">
+      <DependentUpon>ItemFlowLayout_Lich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemList\itemListNhapThuChi.resx">
+      <DependentUpon>itemListNhapThuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemList\ItemListThuChi_BaoCao.resx">
+      <DependentUpon>ItemListThuChi_BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemList\itemListtimkiem.resx">
+      <DependentUpon>itemListtimkiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemList\ItemPictureBox_ThemDanhMuc.resx">
+      <DependentUpon>ItemPictureBox_ThemDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemList\PhanCachNgay_Lich.resx">
+      <DependentUpon>PhanCachNgay_Lich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportTienThu.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportChitieu.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\ReportChiTieu.resx">
+      <DependentUpon>ReportChiTieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\wrench.png" />
+    <EmbeddedResource Include="Resources\wifi.png" />
+    <EmbeddedResource Include="Resources\wallet.png" />
+    <EmbeddedResource Include="Resources\utensils.png" />
+    <EmbeddedResource Include="Resources\taxi.png" />
+    <EmbeddedResource Include="Resources\smoking.png" />
+    <EmbeddedResource Include="Resources\shirt.png" />
+    <EmbeddedResource Include="Resources\ship.png" />
+    <EmbeddedResource Include="Resources\school.png" />
+    <EmbeddedResource Include="Resources\plane.png" />
+    <EmbeddedResource Include="Resources\phone.png" />
+    <EmbeddedResource Include="Resources\paintbrush.png" />
+    <EmbeddedResource Include="Resources\motorcycle.png" />
+    <EmbeddedResource Include="Resources\house.png" />
+    <EmbeddedResource Include="Resources\hospital.png" />
+    <EmbeddedResource Include="Resources\guitar.png" />
+    <EmbeddedResource Include="Resources\gifts.png" />
+    <EmbeddedResource Include="Resources\gift.png" />
+    <EmbeddedResource Include="Resources\dumbbell.png" />
+    <EmbeddedResource Include="Resources\dog.png" />
+    <EmbeddedResource Include="Resources\coins.png" />
+    <EmbeddedResource Include="Resources\church.png" />
+    <EmbeddedResource Include="Resources\children.png" />
+    <EmbeddedResource Include="Resources\child.png" />
+    <EmbeddedResource Include="Resources\cat.png" />
+    <EmbeddedResource Include="Resources\car.png" />
+    <EmbeddedResource Include="Resources\camera.png" />
+    <EmbeddedResource Include="Resources\bus.png" />
+    <EmbeddedResource Include="Resources\burger.png" />
+    <EmbeddedResource Include="Resources\building.png" />
+    <EmbeddedResource Include="Resources\bug.png" />
+    <EmbeddedResource Include="Resources\bucket.png" />
+    <EmbeddedResource Include="Resources\broom.png" />
+    <EmbeddedResource Include="Resources\briefcase.png" />
+    <EmbeddedResource Include="Resources\bicycle.png" />
+    <EmbeddedResource Include="Resources\bed.png" />
+    <EmbeddedResource Include="Resources\bath.png" />
+    <EmbeddedResource Include="Resources\basketball.png" />
+    <EmbeddedResource Include="Resources\baseball.png" />
+    <EmbeddedResource Include="Resources\baby.png" />
+    <EmbeddedResource Include="Resources\award.png" />
+    <EmbeddedResource Include="Form\timkiem.resx">
+      <DependentUpon>timkiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DTO.DTO_TienChi.datasource" />
+    <None Include="Properties\DataSources\DTO.DTO_TienThu.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{976622cc-d356-427a-8b56-87a3e5072892}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{c3137add-25ac-4cc4-a814-e83cd3f64d7a}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\address_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\babycarriage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\baseballbatball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\basketshopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\bedpulse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\bookopenreader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\bowlrice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\briefcasemedical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\buildingcolumns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\bussimple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cakecandles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cameraretro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cartarrowdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cartplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cartshopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\champagneglasses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\childdress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\faucetdrip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\gasPump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\handholdingdollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\mughot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\penruler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\personbiking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\personcane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\phonevolume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\piggybank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\winebottle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\wineglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

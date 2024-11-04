@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "QuanLyThuChi\GUI.csproj", "{22091A97-C633-4269-8AF4-142BA5962F76}"
+	ProjectSection(ProjectDependencies) = postProject
+		{976622CC-D356-427A-8B56-87A3E5072892} = {976622CC-D356-427A-8B56-87A3E5072892}
+		{C3137ADD-25AC-4CC4-A814-E83CD3F64D7A} = {C3137ADD-25AC-4CC4-A814-E83CD3F64D7A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS", "BUS\BUS.csproj", "{976622CC-D356-427A-8B56-87A3E5072892}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48C8820A-2847-42D6-9DFB-F6D188FCB4E6} = {48C8820A-2847-42D6-9DFB-F6D188FCB4E6}
+		{C3137ADD-25AC-4CC4-A814-E83CD3F64D7A} = {C3137ADD-25AC-4CC4-A814-E83CD3F64D7A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{48C8820A-2847-42D6-9DFB-F6D188FCB4E6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3137ADD-25AC-4CC4-A814-E83CD3F64D7A} = {C3137ADD-25AC-4CC4-A814-E83CD3F64D7A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{C3137ADD-25AC-4CC4-A814-E83CD3F64D7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22091A97-C633-4269-8AF4-142BA5962F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22091A97-C633-4269-8AF4-142BA5962F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22091A97-C633-4269-8AF4-142BA5962F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22091A97-C633-4269-8AF4-142BA5962F76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976622CC-D356-427A-8B56-87A3E5072892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976622CC-D356-427A-8B56-87A3E5072892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976622CC-D356-427A-8B56-87A3E5072892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976622CC-D356-427A-8B56-87A3E5072892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C8820A-2847-42D6-9DFB-F6D188FCB4E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C8820A-2847-42D6-9DFB-F6D188FCB4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C8820A-2847-42D6-9DFB-F6D188FCB4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C8820A-2847-42D6-9DFB-F6D188FCB4E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3137ADD-25AC-4CC4-A814-E83CD3F64D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3137ADD-25AC-4CC4-A814-E83CD3F64D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3137ADD-25AC-4CC4-A814-E83CD3F64D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3137ADD-25AC-4CC4-A814-E83CD3F64D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10BFB42F-0D1F-4179-BF7C-152CEF3CF510}
+	EndGlobalSection
+EndGlobal
